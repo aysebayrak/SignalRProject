@@ -25,7 +25,7 @@ namespace BusinessLayer.Concrete
             _testimonialDal.Delete(entity);
         }
 
-        public Testimonial TGetByID(int id)
+        public Testimonial TGetById(int id)
         {
             return _testimonialDal.GetById(id);
         }

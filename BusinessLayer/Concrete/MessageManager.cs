@@ -23,7 +23,7 @@ namespace BusinessLayer.Concrete
 			_messageDal.Delete(entity);
 		}
 
-		public Message TGetByID(int id)
+		public Message TGetById(int id)
 		{
 			return _messageDal.GetById(id);
 		}

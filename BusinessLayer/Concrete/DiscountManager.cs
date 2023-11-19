@@ -27,7 +27,7 @@ namespace BusinessLayer.Concrete
            _discountDal.Delete(entity);
         }
 
-        public Discount TGetByID(int id)
+        public Discount TGetById(int id)
         {
            return _discountDal.GetById(id);
         }

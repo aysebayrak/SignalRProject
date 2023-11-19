@@ -29,7 +29,7 @@ namespace  BusinessLayer.Concrete
             _bookingDal.Delete(entity);
         }
 
-        public Booking TGetByID(int id)
+        public Booking TGetById(int id)
         {
             return _bookingDal.GetById(id);
         }

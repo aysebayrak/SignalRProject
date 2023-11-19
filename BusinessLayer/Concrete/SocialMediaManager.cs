@@ -25,7 +25,7 @@ namespace BusinessLayer.Concrete
            _socialMediaDal.Delete(entity);
         }
 
-        public SocialMedia TGetByID(int id)
+        public SocialMedia TGetById(int id)
         {
            return _socialMediaDal.GetById(id);
         }

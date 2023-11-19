@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "8hT3LZv4OnRsswM5efnJ++1YuHB+E4mbyTVASvdYoakjalbT/WQ1PDL7iq8hf8Jedf62Zlt3DyezatEwvLgVJw==",
+  "dgSpecHash": "yF5q1LoytLHnuGGU2qQmkmFxN0kl/PmjgFG5vxh0Wh0jXnJcxXqGvzmSQJ4XD33/UbVzLp0PzWkDvCTjByJwuA==",
   "success": true,
   "projectFilePath": "C:\\projeler_ab\\SignalRProject\\SignalRApi\\SignalRApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ayseb\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\ayseb\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\ayseb\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\ayseb\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.25\\microsoft.entityframeworkcore.6.0.25.nupkg.sha512",

@@ -24,7 +24,7 @@ namespace BusinessLayer.Concrete
             _featureDal.Delete(entity);
         }
 
-        public Feature TGetByID(int id)
+        public Feature TGetById(int id)
         {
            return _featureDal.GetById(id);
         }

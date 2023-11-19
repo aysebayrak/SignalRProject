@@ -21,7 +21,7 @@ namespace BusinessLayer.Concrete
             _aboutDal.Delete(entity);
         }
 
-        public About TGetByID(int id)
+        public About TGetById(int id)
         {
            return _aboutDal.GetById(id);
         }

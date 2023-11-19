@@ -22,7 +22,7 @@ namespace BusinessLayer.Concrete
             _contactDal.Delete(entity);
         }
 
-        public Contact TGetByID(int id)
+        public Contact TGetById(int id)
         {
             return _contactDal.GetById(id);
         }

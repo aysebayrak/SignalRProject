@@ -22,7 +22,7 @@ namespace BusinessLayer.Concrete
         }
 
    
-        public Basket TGetByID(int id)
+        public Basket TGetById(int id)
         {
             return _basketDal.GetById(id);
         }

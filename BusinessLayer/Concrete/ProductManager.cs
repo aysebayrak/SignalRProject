@@ -27,7 +27,7 @@ namespace BusinessLayer.Concrete
             _productDal.Delete(entity);
         }
 
-        public Product TGetByID(int id)
+        public Product TGetById(int id)
         {
             return _productDal.GetById(id);
         }

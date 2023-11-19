@@ -257,6 +257,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime>("MessageSendDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("MessageStatus")
+                        .HasColumnType("bit");
+
                     b.Property<string>("NameSurname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -264,9 +267,6 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Phone")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
 
                     b.Property<string>("Subject")
                         .IsRequired()
