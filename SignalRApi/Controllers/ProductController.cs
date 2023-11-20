@@ -5,6 +5,7 @@ using DtoLayer.ProductDto;
 using EntityLayer.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace SignalRApi.Controllers
 {
@@ -39,6 +40,8 @@ namespace SignalRApi.Controllers
                 Price = createProductDto.Price,
                 ProductName = createProductDto.ProductName,
                 ProductStatus = createProductDto.ProductStatus,
+                CategoryId = createProductDto.CategoryId
+
               
             });
             return Ok("Ürün Bilgisi Eklendi");
@@ -66,10 +69,29 @@ namespace SignalRApi.Controllers
                 Price = updateProductDto.Price,
                 ProductName = updateProductDto.ProductName,
                 ProductStatus = updateProductDto.ProductStatus,
-                ProductId = updateProductDto.ProductId
-             
+                ProductId = updateProductDto.ProductId,
+                CategoryId = updateProductDto.CategoryId
+
             });
             return Ok("Ürün Bilgisi Güncellendi");
+        }
+
+        [HttpGet("ProductListWithCategory")]
+        public IActionResult ProductListWithCategory()
+        {
+            var context = new SignalRContext();
+            var values = context.Products.Include(x=> x.Category).Select(y=> new ResultProductWithCategory {
+                Description = y.Description,
+                ImageUrl = y.ImageUrl,
+                Price = y.Price,
+                ProductId = y.ProductId,
+                ProductName = y.ProductName,
+                ProductStatus = y.ProductStatus,
+                CategoryName = y.Category.CategoryName
+
+            });
+            return Ok(values.ToList());
+
         }
     }
 }
