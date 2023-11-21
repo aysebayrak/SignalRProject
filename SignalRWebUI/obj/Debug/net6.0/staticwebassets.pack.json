@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\Ready-Bootstrap-Dashboard-master\\assets\\img\\profile2.jpg"
     },
     {
+      "Id": "C:\\projeler_ab\\SignalRProject\\SignalRWebUI\\wwwroot\\Ready-Bootstrap-Dashboard-master\\assets\\img\\profile3.jpeg",
+      "PackagePath": "staticwebassets\\Ready-Bootstrap-Dashboard-master\\assets\\img\\profile3.jpeg"
+    },
+    {
       "Id": "C:\\projeler_ab\\SignalRProject\\SignalRWebUI\\wwwroot\\Ready-Bootstrap-Dashboard-master\\assets\\js\\core\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\Ready-Bootstrap-Dashboard-master\\assets\\js\\core\\bootstrap.min.js"
     },

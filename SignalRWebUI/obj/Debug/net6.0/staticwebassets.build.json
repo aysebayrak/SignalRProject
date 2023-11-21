@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7zjHXYwjptQbMx7Z/4rARc4D+UuAbBd6E9VFULv29hg=",
+  "Hash": "cziwSPRC+KNMT4972CJC6niakVIYEZzYS+ejKlSLf4w=",
   "Source": "SignalRWebUI",
   "BasePath": "_content/SignalRWebUI",
   "Mode": "Default",
@@ -2259,6 +2259,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Ready-Bootstrap-Dashboard-master\\assets\\img\\profile2.jpg"
+    },
+    {
+      "Identity": "C:\\projeler_ab\\SignalRProject\\SignalRWebUI\\wwwroot\\Ready-Bootstrap-Dashboard-master\\assets\\img\\profile3.jpeg",
+      "SourceId": "SignalRWebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projeler_ab\\SignalRProject\\SignalRWebUI\\wwwroot\\",
+      "BasePath": "_content/SignalRWebUI",
+      "RelativePath": "Ready-Bootstrap-Dashboard-master/assets/img/profile3.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Ready-Bootstrap-Dashboard-master\\assets\\img\\profile3.jpeg"
     },
     {
       "Identity": "C:\\projeler_ab\\SignalRProject\\SignalRWebUI\\wwwroot\\Ready-Bootstrap-Dashboard-master\\assets\\js\\core\\bootstrap.min.js",
