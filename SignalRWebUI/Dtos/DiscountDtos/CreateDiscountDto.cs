@@ -15,3 +15,4 @@ namespace SignalRWebUI.Dtos.DiscountDtos
         public bool DiscountStatus { get; set; }
     }
 }
+
