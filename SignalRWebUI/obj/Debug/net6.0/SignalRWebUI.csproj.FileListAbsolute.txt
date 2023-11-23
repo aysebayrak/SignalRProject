@@ -223,3 +223,4 @@ C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\runtimes\win\lib\net
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\projeler_ab\SignalRProject\SignalRWebUI\obj\Debug\net6.0\SignalRWebUI.csproj.CopyComplete
+C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\libman.json
