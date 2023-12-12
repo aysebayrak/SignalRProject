@@ -26,5 +26,9 @@ namespace DataAccessLayer.Concrete
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Message> Messages { get; set; }
-    }
+		public DbSet<Order> Orders { get; set; }
+		public DbSet<OrderDetail> OrderDetails { get; set; }
+
+
+	}
 }
