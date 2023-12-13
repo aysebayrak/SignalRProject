@@ -277,6 +277,22 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Messages");
                 });
 
+            modelBuilder.Entity("EntityLayer.Entities.MoneyCase", b =>
+                {
+                    b.Property<int>("MoneyCaseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MoneyCaseId"), 1L, 1);
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("MoneyCaseId");
+
+                    b.ToTable("MoneyCases");
+                });
+
             modelBuilder.Entity("EntityLayer.Entities.Order", b =>
                 {
                     b.Property<int>("OrderId")

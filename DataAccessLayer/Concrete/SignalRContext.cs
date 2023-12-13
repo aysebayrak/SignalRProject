@@ -28,6 +28,11 @@ namespace DataAccessLayer.Concrete
         public DbSet<Message> Messages { get; set; }
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<OrderDetail> OrderDetails { get; set; }
+		public DbSet<MoneyCase> MoneyCases { get; set; }
+
+
+
+
 
 
 	}
