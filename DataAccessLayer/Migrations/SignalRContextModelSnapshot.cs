@@ -58,6 +58,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<decimal>("Count")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int?>("MenuTableId")
+                        .HasColumnType("int");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
@@ -65,6 +68,8 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("BasketId");
+
+                    b.HasIndex("MenuTableId");
 
                     b.ToTable("Baskets");
                 });
@@ -236,6 +241,26 @@ namespace DataAccessLayer.Migrations
                     b.HasKey("FeatureId");
 
                     b.ToTable("Features");
+                });
+
+            modelBuilder.Entity("EntityLayer.Entities.MenuTable", b =>
+                {
+                    b.Property<int>("MenuTableId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MenuTableId"), 1L, 1);
+
+                    b.Property<string>("MenuTableName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("MenuTableStatus")
+                        .HasColumnType("bit");
+
+                    b.HasKey("MenuTableId");
+
+                    b.ToTable("MenuTables");
                 });
 
             modelBuilder.Entity("EntityLayer.Entities.Message", b =>
@@ -445,6 +470,13 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Testimonials");
                 });
 
+            modelBuilder.Entity("EntityLayer.Entities.Basket", b =>
+                {
+                    b.HasOne("EntityLayer.Entities.MenuTable", null)
+                        .WithMany("Baskets")
+                        .HasForeignKey("MenuTableId");
+                });
+
             modelBuilder.Entity("EntityLayer.Entities.OrderDetail", b =>
                 {
                     b.HasOne("EntityLayer.Entities.Order", "Order")
@@ -478,6 +510,11 @@ namespace DataAccessLayer.Migrations
             modelBuilder.Entity("EntityLayer.Entities.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("EntityLayer.Entities.MenuTable", b =>
+                {
+                    b.Navigation("Baskets");
                 });
 
             modelBuilder.Entity("EntityLayer.Entities.Order", b =>

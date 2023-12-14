@@ -9,6 +9,6 @@ namespace BusinessLayer.Abstract
 {
 	public interface IMoneyCaseService : IGenericService<MoneyCase>
 	{
-		//decimal TTotalMoneyCaseAmount();
+		decimal TTotalMoneyCaseAmount();
 	}
 }

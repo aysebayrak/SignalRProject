@@ -38,7 +38,11 @@ namespace BusinessLayer.Concrete
 			throw new NotImplementedException();
 		}
 
-	
+		public decimal TTotalMoneyCaseAmount()
+		{
+		  return _moneyCaseDal.TotalMoneyCaseAmount();
+		}
+
 		public void TUpdate(MoneyCase entity)
 		{
 			throw new NotImplementedException();

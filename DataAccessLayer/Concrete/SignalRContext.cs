@@ -1,10 +1,6 @@
 ﻿using EntityLayer.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DataAccessLayer.Concrete
 {
@@ -30,9 +26,7 @@ namespace DataAccessLayer.Concrete
 		public DbSet<OrderDetail> OrderDetails { get; set; }
 		public DbSet<MoneyCase> MoneyCases { get; set; }
 
-
-
-
+		public DbSet<MenuTable> MenuTables { get; set; }
 
 
 	}
