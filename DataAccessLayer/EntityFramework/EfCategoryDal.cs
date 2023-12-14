@@ -27,7 +27,7 @@ namespace DataAccessLayer.EntityFramework
 		public int PassiveCategoryCount()
 		{
 			using var context = new SignalRContext();
-			return context.Categories.Where(x => x.CategoryStatus == false).Count();
+			return context.Categories.Where(x => x.CategoryStatus ==false).Count();
 		}
 	}
 }
