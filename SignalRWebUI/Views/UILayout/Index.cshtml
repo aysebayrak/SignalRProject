@@ -1,33 +1,30 @@
-﻿
+﻿﻿
 @{
     Layout = null;
-  <!-- UILayout-->
-}
 
+}
+@* UI Layout*@
 <!DOCTYPE html>
 <html>
 
-    @await Component.InvokeAsync("_UILayoutHeadComponentPartial");
+@await Component.InvokeAsync("_UILayoutHeadComponentPartial")
 
-<body class="sub_page">
+<body>
 
-     @await Component.InvokeAsync("_UILayoutNavbarComponentPartial");
+    @await Component.InvokeAsync("_UILayoutNavbarComponentPartial")
 
+    <!-- book section -->
+    @RenderBody()
+    <!-- end book section -->
+    <!-- footer section -->
+    @await Component.InvokeAsync("_UILayoutFooterComponentPartial")
 
-  <!-- book section -->
-@RenderBody()
-  <!-- end book section -->
+    @await Component.InvokeAsync("_UILayoutScriptComponentPartial")
 
-  <!-- footer section -->
-     @await Component.InvokeAsync("_UILayoutFooterComponentPartial");
-  <!-- footer section -->
+    <!-- footer section -->
+    <!-- jQery -->
 
-      @await Component.InvokeAsync("_UILayoutScriptComponentPartial");
-    
-  <!-- jQery -->
- 
 
 </body>
 
 </html>
-
