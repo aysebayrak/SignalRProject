@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IBasketDal : IGenericDal<Basket>
     {
+        List<Basket> GetBAsketByMenuTableNumber(int id);
     }
 }

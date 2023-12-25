@@ -21,7 +21,11 @@ namespace BusinessLayer.Concrete
            _basketDal.Delete(entity);
         }
 
-   
+        public List<Basket> TGetBAsketByMenuTableNumber(int id)
+        {
+            return _basketDal.GetBAsketByMenuTableNumber(id);
+        }
+
         public Basket TGetById(int id)
         {
             return _basketDal.GetById(id);
