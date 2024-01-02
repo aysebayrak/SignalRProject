@@ -23,5 +23,13 @@ namespace SignalRApi.Controllers
             _basketService.TDelete(value);
             return Ok("Sepetteki Seçilen Ürün Silindi");
         }
+
+        [HttpGet]
+        public IActionResult GetBasketByMenuTableId(int id)
+        {
+            var values = _basketService.TGetBAsketByMenuTableNumber(id);
+            return Ok(values);
+        }
+
     }
 }
