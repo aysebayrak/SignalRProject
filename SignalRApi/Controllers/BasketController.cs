@@ -1,6 +1,9 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SignalRApi.Models;
 
 namespace SignalRApi.Controllers
 {
@@ -24,6 +27,8 @@ namespace SignalRApi.Controllers
             return Ok("Sepetteki Seçilen Ürün Silindi");
         }
 
+
+
         [HttpGet]
         public IActionResult GetBasketByMenuTableId(int id)
         {
@@ -31,5 +36,23 @@ namespace SignalRApi.Controllers
             return Ok(values);
         }
 
+
+        [HttpGet]
+        [HttpGet("BasketListByMenuTableWithProductName")]
+        public IActionResult BasketListByMenuTableWithProductName(int id)
+        {
+           using  var context = new SignalRContext();
+            var values  = context.Baskets.Include(x=>x.Product).Where(y=>y.MenuTableId==id).Select(z=> new ResultBasketListWithProducts
+            {
+               BasketId = z.BasketId,
+               Count = z.Count,
+               MenuTableId= z.MenuTableId,
+               Price     = z.Price,
+               TotalPrice = z.TotalPrice,
+               ProductName= z.Product.ProductName
+
+            }).ToList();
+            return Ok(values);       
+        }
     }
 }

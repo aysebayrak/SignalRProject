@@ -8,7 +8,7 @@ namespace SignalRWebUI.Controllers
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        string baseUrl = "https://localhost:7085/api/Basket";
+        string baseUrl = "https://localhost:7085/api/Basket?id=1";
 
 
         public BasketsController(IHttpClientFactory httpClientFactory)
