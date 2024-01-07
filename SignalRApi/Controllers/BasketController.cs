@@ -37,7 +37,6 @@ namespace SignalRApi.Controllers
         }
 
 
-        [HttpGet]
         [HttpGet("BasketListByMenuTableWithProductName")]
         public IActionResult BasketListByMenuTableWithProductName(int id)
         {
