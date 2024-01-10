@@ -323,6 +323,37 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("MoneyCases");
                 });
 
+            modelBuilder.Entity("EntityLayer.Entities.Notification", b =>
+                {
+                    b.Property<int>("NotificationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NotificationId"), 1L, 1);
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NotificationId");
+
+                    b.ToTable("Notifications");
+                });
+
             modelBuilder.Entity("EntityLayer.Entities.Order", b =>
                 {
                     b.Property<int>("OrderId")

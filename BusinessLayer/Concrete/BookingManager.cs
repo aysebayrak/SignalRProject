@@ -14,11 +14,6 @@ namespace  BusinessLayer.Concrete
         {
             _bookingDal = bookingDal;
         }
-
-	
-
-	
-
 		public void TAdd(Booking entity)
         {
             _bookingDal.Add(entity);
