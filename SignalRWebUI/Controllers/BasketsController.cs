@@ -30,20 +30,17 @@ namespace SignalRWebUI.Controllers
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> AddBasket()
+        public async Task<IActionResult> DeleteBasket(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createAboutDto);
-            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync(baseUrl, stringContent);
+            var responseMessage = await client.DeleteAsync($"https://localhost:7085/api/Basket/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
             }
-            return View();
-
+            return NoContent();
         }
+
 
 
 
