@@ -6,10 +6,13 @@ namespace DataAccessLayer.Abstract
 {
 	public interface INotificationDal:IGenericDal<Notification>
 	{
-		//int NotificationCountByStatusFalse();
-		//List<Notification> GetAllNotificationByFalse();
-		//void NotificationStatusChangeToTrue(int id);
-		//void NotificationStatusChangeToFalse(int id);
+		int NotificationCountByStatusFalse();
+		List<Notification> GetNotificationByFalse();
+
+		void NotificationStatusChangeToTrue(int id);
+        void NotificationStatusChangeToFalse(int id);
+
+
 
     }
 }

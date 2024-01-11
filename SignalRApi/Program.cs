@@ -76,6 +76,9 @@ builder.Services.AddScoped<ISliderService, SliderManager>();
 builder.Services.AddScoped<INotificationDal, EfNotificationDal>();
 builder.Services.AddScoped<INotificationService, NotificationManager>();
 
+//builder.Services.AddScoped<IMessageService, MessageManager>();
+//builder.Services.AddScoped<IMessageDal, EfMessageDal>();
+
 builder.Services.AddControllersWithViews()
     .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
@@ -92,8 +95,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+	app.UseSwagger();
+	app.UseSwaggerUI();
 }
 
 app.UseCors("CorsPolicy");
