@@ -1,10 +1,11 @@
 ﻿using EntityLayer.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 
 namespace DataAccessLayer.Concrete
 {
-    public class SignalRContext :DbContext
+    public class SignalRContext :IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -25,7 +26,6 @@ namespace DataAccessLayer.Concrete
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<OrderDetail> OrderDetails { get; set; }
 		public DbSet<MoneyCase> MoneyCases { get; set; }
-
 		public DbSet<MenuTable> MenuTables { get; set; }
         public DbSet<Slider> Sliders { get; set; }
 		public DbSet<Notification> Notifications { get; set; }
