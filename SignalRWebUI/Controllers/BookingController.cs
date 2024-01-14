@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SignalRWebUI.Dtos.BookingDtos;
+using System.Net.Http;
 using System.Text;
 
 namespace SignalRWebUI.Controllers
@@ -38,6 +39,7 @@ namespace SignalRWebUI.Controllers
         public async Task<IActionResult> CreateBooking(CreateBookingDto createBookingDto)
         {
 
+            createBookingDto.Description = "Rezervasyon Alındı";
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createBookingDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
@@ -89,5 +91,24 @@ namespace SignalRWebUI.Controllers
             return View();
 
         }
-    }
+
+
+		public async Task<IActionResult> BookingStatusApproved(int id)
+		{
+			var client = _httpClientFactory.CreateClient();
+			await client.GetAsync( $"{baseUrl}/BookingStatusApproved/{id}" );
+			return RedirectToAction("Index");
+		}
+
+		public async Task<IActionResult> BookingStatusCancelled(int id)
+		{
+			var client = _httpClientFactory.CreateClient();
+			await client.GetAsync($"{baseUrl}/BookingStatusCancelled/{id}");
+			return RedirectToAction("Index");
+		}
+	}
 }
+
+
+
+
