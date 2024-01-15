@@ -1,12 +1,29 @@
 using DataAccessLayer.Concrete;
 using EntityLayer.Entities;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build(); //atantike olmuþ kullanýcýyý zorunlu kýl
 
 builder.Services.AddDbContext<SignalRContext>();
 builder.Services.AddIdentity<AppUser,AppRole>().AddEntityFrameworkStores<SignalRContext>();
 builder.Services.AddHttpClient();
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(opt =>
+{
+    opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy));
+    // bütün controlleri ekle 
+});
+
+
+
+builder.Services.ConfigureApplicationCookie(opts =>
+{
+    //otantike olmasý için logine yoll
+    opts.LoginPath = "/Login/Index";
+});
+
 
 var app = builder.Build();
 
@@ -23,6 +40,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
