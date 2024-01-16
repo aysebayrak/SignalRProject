@@ -18,5 +18,8 @@ namespace BusinessLayer.Abstract
 		string TProductNameByMaxPrice();
 		string TProductNameByMinPrice();
 		decimal TProductPriceByHamburger();
-	}
+
+        decimal TTotalPriceByDrinkCategory();
+        decimal TTotalPriceBySaladCategory();
+    }
 }

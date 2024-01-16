@@ -101,17 +101,32 @@ namespace SignalRApi.Controllers
         }
 
 
-		[HttpGet("ProductCountByHamburger")]
+        [HttpGet("TotalPriceByDrinkCategory")]
+        public IActionResult TotalPriceByDrinkCategory()
+        {
+            return Ok(_productService.TTotalPriceByDrinkCategory());
+        }
+
+        [HttpGet("TotalPriceBySaladCategory")]
+        public IActionResult TotalPriceBySaladCategory()
+        {
+            return Ok(_productService.TTotalPriceBySaladCategory());
+        }
+
+        [HttpGet("ProductCountByDrink")]
+        public IActionResult ProductCountByDrink()
+        {
+            return Ok(_productService.TProductCountByCategoryNameDrink());
+        }
+
+
+        [HttpGet("ProductCountByHamburger")]
 		public IActionResult ProductCountByHamburger()
 		{
 			return Ok(_productService.TProductCountByCategoryNameHamburger());
 		}
 
-		[HttpGet("ProductCountByDrink")]
-		public IActionResult ProductCountByDrink()
-		{
-			return Ok(_productService.TProductCountByCategoryNameDrink());
-		}
+	
 
 		[HttpGet("ProductPriceAvg")]
 		public IActionResult ProductPriceAvg()

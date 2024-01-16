@@ -20,6 +20,10 @@ namespace DataAccessLayer.Abstract
 		string ProductNameByMinPrice();
         decimal ProductPriceByHamburger();
 
-	}
+        decimal TotalPriceByDrinkCategory();
+        decimal TotalPriceBySaladCategory();
+
+
+    }
 
 }

@@ -17,7 +17,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "6.0.25",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
           "NETCore.MailKit": "2.1.0",
-          "QRCoder": "1.4.2"
+          "QRCoder": "1.4.3"
         },
         "runtime": {
           "SignalRWebUI.dll": {}
@@ -1849,14 +1849,11 @@
           }
         }
       },
-      "QRCoder/1.4.2": {
-        "dependencies": {
-          "System.Drawing.Common": "6.0.0"
-        },
+      "QRCoder/1.4.3": {
         "runtime": {
-          "lib/net5.0/QRCoder.dll": {
-            "assemblyVersion": "1.4.2.0",
-            "fileVersion": "1.4.2.0"
+          "lib/net6.0/QRCoder.dll": {
+            "assemblyVersion": "1.4.3.0",
+            "fileVersion": "1.4.3.0"
           }
         }
       },
@@ -3769,12 +3766,12 @@
       "path": "portable.bouncycastle/1.9.0",
       "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
     },
-    "QRCoder/1.4.2": {
+    "QRCoder/1.4.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-985OiJWb6Fft5r1AQ1NcpGgDDGZVKvWIF9ijV3N2lxJaTKpL2mAHAGvMXgcjRLMGSaldAcBiTFDGHCgDRpCW9A==",
-      "path": "qrcoder/1.4.2",
-      "hashPath": "qrcoder.1.4.2.nupkg.sha512"
+      "sha512": "sha512-fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
+      "path": "qrcoder/1.4.3",
+      "hashPath": "qrcoder.1.4.3.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

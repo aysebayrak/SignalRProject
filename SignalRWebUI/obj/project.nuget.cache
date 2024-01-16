@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/bWnLYr6Tx5V4p4hxTip6CiNAVqkuuXtMn8Bpto39opcEb7pa+pmSn06oY0QR3W46VbnCUbvyQottLZkLCleKQ==",
+  "dgSpecHash": "8OmGwsiEfQ8s1DWftl9fCJyyHSSyJCzYuIwhmGCju+l8kIZs4w1s/Kzevy6UZhPjho2zj4IkZqEjcOYPCEB7fg==",
   "success": true,
   "projectFilePath": "C:\\projeler_ab\\SignalRProject\\SignalRWebUI\\SignalRWebUI.csproj",
   "expectedPackageFiles": [
@@ -151,7 +151,7 @@
     "C:\\Users\\ayseb\\.nuget\\packages\\nuget.protocol\\6.6.1\\nuget.protocol.6.6.1.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\nuget.versioning\\6.6.1\\nuget.versioning.6.6.1.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
-    "C:\\Users\\ayseb\\.nuget\\packages\\qrcoder\\1.4.2\\qrcoder.1.4.2.nupkg.sha512",
+    "C:\\Users\\ayseb\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\ayseb\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

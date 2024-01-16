@@ -2510,16 +2510,13 @@
           }
         }
       },
-      "QRCoder/1.4.2": {
+      "QRCoder/1.4.3": {
         "type": "package",
-        "dependencies": {
-          "System.Drawing.Common": "4.7.0"
-        },
         "compile": {
-          "lib/net5.0/QRCoder.dll": {}
+          "lib/net6.0/QRCoder.dll": {}
         },
         "runtime": {
-          "lib/net5.0/QRCoder.dll": {}
+          "lib/net6.0/QRCoder.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -7624,10 +7621,10 @@
         "portable.bouncycastle.nuspec"
       ]
     },
-    "QRCoder/1.4.2": {
-      "sha512": "985OiJWb6Fft5r1AQ1NcpGgDDGZVKvWIF9ijV3N2lxJaTKpL2mAHAGvMXgcjRLMGSaldAcBiTFDGHCgDRpCW9A==",
+    "QRCoder/1.4.3": {
+      "sha512": "fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
       "type": "package",
-      "path": "qrcoder/1.4.2",
+      "path": "qrcoder/1.4.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7635,11 +7632,13 @@
         "lib/net40/QRCoder.dll",
         "lib/net5.0-windows7.0/QRCoder.dll",
         "lib/net5.0/QRCoder.dll",
+        "lib/net6.0-windows7.0/QRCoder.dll",
+        "lib/net6.0/QRCoder.dll",
         "lib/netstandard1.3/QRCoder.dll",
         "lib/netstandard2.0/QRCoder.dll",
         "nuget-icon.png",
         "nuget-readme.md",
-        "qrcoder.1.4.2.nupkg.sha512",
+        "qrcoder.1.4.3.nupkg.sha512",
         "qrcoder.nuspec"
       ]
     },
@@ -11714,7 +11713,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.25",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
       "NETCore.MailKit >= 2.1.0",
-      "QRCoder >= 1.4.2"
+      "QRCoder >= 1.4.3"
     ]
   },
   "packageFolders": {
@@ -11806,7 +11805,7 @@
           },
           "QRCoder": {
             "target": "Package",
-            "version": "[1.4.2, )"
+            "version": "[1.4.3, )"
           }
         },
         "imports": [
