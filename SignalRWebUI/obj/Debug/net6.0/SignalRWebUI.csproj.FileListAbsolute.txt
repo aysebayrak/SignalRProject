@@ -257,3 +257,4 @@ C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\DataAccessLayer.dll
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\EntityLayer.dll
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\EntityLayer.pdb
+C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\QRCoder.dll
