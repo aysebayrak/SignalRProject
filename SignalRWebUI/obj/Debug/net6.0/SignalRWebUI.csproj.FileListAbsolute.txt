@@ -258,3 +258,7 @@ C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\EntityLayer.dll
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\EntityLayer.pdb
 C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\QRCoder.dll
+C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\MailKit.dll
+C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\MimeKit.dll
+C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\NETCore.MailKit.dll
+C:\projeler_ab\SignalRProject\SignalRWebUI\bin\Debug\net6.0\BouncyCastle.Crypto.dll
