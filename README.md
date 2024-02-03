@@ -1,3 +1,5 @@
+***SignalRProject Restoranlar Icin Dinamik Siparis Yonetimi***
+
 **Kullanılan  Teknolojiler**
 
 AspNet Core 6.0                   
